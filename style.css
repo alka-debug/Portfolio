@@ -149,3 +149,119 @@ section {
   background: #334155;
   border-radius: 20px;
 }
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-right img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #334155;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.soft-heading {
+  margin-top: 60px;
+}
+
+.skill-box i {
+  margin-right: 10px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: white;
+}
+
+.contact {
+  padding: 80px;
+}
+
+.contact p {
+  margin-bottom: 15px;
+  color: #cbd5e1;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about,
+.skills,
+.projects,
+.contact {
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(max-width: 900px) {
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  nav {
+    padding: 20px;
+  }
+
+  .hero,
+  .about,
+  .skills,
+  .projects,
+  .contact {
+    padding: 40px 20px;
+  }
+
+  .hero-right img {
+    width: 220px;
+    height: 220px;
+  }
+}
