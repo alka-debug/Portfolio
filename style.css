@@ -412,18 +412,23 @@ section {
 }
 
 .project-card {
-  background: #111c31;
-  border: 1px solid #243041;
-  border-radius: 20px;
-  padding: 35px;
-  margin-bottom: 25px;
-  transition: 0.3s;
+  padding: 18px 0;
+  border-bottom: 1px solid #1e293b;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  border-color: #3b82f6;
+.project-card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
 }
+
+.project-card p {
+  color: #94a3b8;
+  line-height: 1.7;
+  font-size: 15px;
+  max-width: 850px;
+}
+
+
 
 section {
   opacity: 0;
