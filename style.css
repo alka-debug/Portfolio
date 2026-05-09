@@ -167,11 +167,10 @@ section {
 .project-card {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
-  padding: 22px 0;
+  gap: 18px;
+  padding: 18px 0;
   border-bottom: 1px solid #1e293b;
 }
-
 .skill-icon {
   min-width: 45px;
   display: flex;
@@ -186,16 +185,17 @@ section {
 
 .skill-info h3,
 .project-card h3 {
-  font-size: 22px;
-  margin-bottom: 6px;
+  font-size: 18px;
+  margin-bottom: 4px;
+  font-weight: 600;
 }
 
 .skill-info p,
 .project-card p {
   color: #94a3b8;
-  line-height: 1.8;
-  font-size: 15px;
-  max-width: 850px;
+  line-height: 1.7;
+  font-size: 14px;
+  max-width: 720px;
 }
 
 /* ANIMATION */
@@ -276,11 +276,18 @@ section {
 
   .skill-detail-card,
   .project-card {
-    gap: 15px;
+    gap: 18px;
   }
 
   .skill-info h3,
   .project-card h3 {
     font-size: 19px;
   }
+}
+.project-card {
+  display: block;
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
 }
