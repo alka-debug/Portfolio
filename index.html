@@ -4,63 +4,168 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alka Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body>
 
-  <header class="hero">
+<nav>
+  <h2 class="logo">Alka</h2>
+
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+
+  <div class="hero-left">
     <h1>Alka</h1>
-    <p>BCA Student & Aspiring IT/Cloud Professional</p>
+
+    <p>
+      BCA Student & Aspiring IT/Cloud Professional
+    </p>
 
     <div class="buttons">
-     <a href="https://github.com/alka-debug" target="_blank">GitHub</a>
 
-    <a href="http://linkedin.com/in/alka-kohli-43045337b " target="_blank">LinkedIn</a>
+      <a href="https://github.com/alka-debug" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        GitHub
+      </a>
 
-    <a href="resume.pdf" target="_blank">Resume</a>
+      <a href="https://linkedin.com/in/alka-kohli-43045337b" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+        LinkedIn
+      </a>
+
+      <a href="resume.pdf" target="_blank">
+        <i class="fa-solid fa-file"></i>
+        Resume
+      </a>
+
     </div>
-  </header>
+  </div>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a BCA student building practical technical skills in Linux,
-      Git/GitHub, and system fundamentals while exploring cloud computing,
-      QA, and IT support.
-    </p>
-  </section>
+  <div class="hero-right">
+    <img src="profile.jpg" alt="Profile Picture">
+  </div>
 
-  <section class="skills">
-  <h2>Skills</h2>
+</header>
+
+<section class="about" id="about">
+
+  <h2>About Me</h2>
+
+  <p>
+    I’m a BCA student building practical technical skills in Linux,
+    Git/GitHub, and system fundamentals while exploring cloud
+    computing, QA, and IT support. I enjoy learning through hands-on
+    practice, self-study, and continuously improving my technical foundation.
+  </p>
+
+</section>
+
+<section class="skills" id="skills">
+
+  <h2>Technical Skills</h2>
 
   <div class="skills-container">
-    <div class="skill-box">Linux</div>
-    <div class="skill-box">Git</div>
-    <div class="skill-box">GitHub</div>
-    <div class="skill-box">Basic Networking</div>
-    <div class="skill-box">Command Line</div>
-    <div class="skill-box">Problem Solving</div>
+
+    <div class="skill-box">
+      <i class="fa-brands fa-linux"></i> Linux
+    </div>
+
+    <div class="skill-box">
+      <i class="fa-brands fa-git-alt"></i> Git
+    </div>
+
+    <div class="skill-box">
+      <i class="fa-brands fa-github"></i> GitHub
+    </div>
+
+    <div class="skill-box">
+      <i class="fa-solid fa-network-wired"></i> Networking
+    </div>
+
+    <div class="skill-box">
+      <i class="fa-solid fa-terminal"></i> Command Line
+    </div>
+
   </div>
+
+  <h2 class="soft-heading">Soft Skills</h2>
+
+  <div class="skills-container">
+
+    <div class="skill-box">
+      <i class="fa-solid fa-lightbulb"></i> Problem Solving
+    </div>
+
+    <div class="skill-box">
+      <i class="fa-solid fa-comments"></i> Communication
+    </div>
+
+    <div class="skill-box">
+      <i class="fa-solid fa-book"></i> Continuous Learning
+    </div>
+
+  </div>
+
 </section>
-  <section class="projects">
+
+<section class="projects" id="projects">
+
   <h2>Projects</h2>
 
-  <div class="project-card">
-    <h3>Linux Practice Environment</h3>
-    <p>
-      Practiced Linux commands, file management,
-      permissions, navigation, and terminal usage.
-    </p>
-  </div>
+  <a href="YOUR_GITHUB_REPO_LINK" target="_blank" class="project-link">
 
-  <div class="project-card">
-    <h3>Git & GitHub Practice</h3>
-    <p>
-      Learned repository management, commits,
-      pushes, and version control basics using GitHub.
-    </p>
-  </div>
+    <div class="project-card">
+
+      <h3>Linux Practice & Automation</h3>
+
+      <p>
+        Practiced Linux commands, permissions,
+        process management, backups, and shell scripting.
+      </p>
+
+    </div>
+
+  </a>
+
+  <a href="YOUR_GITHUB_REPO_LINK" target="_blank" class="project-link">
+
+    <div class="project-card">
+
+      <h3>Dockerized Flask Application</h3>
+
+      <p>
+        Built and containerized a Flask application using Docker
+        to understand application packaging and deployment basics.
+      </p>
+
+    </div>
+
+  </a>
+
 </section>
+
+<section class="contact" id="contact">
+
+  <h2>Contact</h2>
+
+  <p>Email: kohlialka22@gmail.com</p>
+
+  <p>GitHub: github.com/alka-debug</p>
+
+  <p>LinkedIn: linkedin.com/in/alka-kohli-43045337b</p>
+
+</section>
+
 <script src="script.js"></script>
+
 </body>
 </html>
