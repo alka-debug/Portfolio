@@ -1,91 +1,72 @@
-// CARD REVEAL
-
-const revealElements = document.querySelectorAll(
-  ".skill-detail-card, .project-card, .about p, .section-title, .hero-text, .hero-image"
-);
+const reveals = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver((entries) => {
 
   entries.forEach((entry) => {
 
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
+    if(entry.isIntersecting){
+      entry.target.classList.add("active");
     }
 
   });
 
 }, {
-  threshold: 0.12
+  threshold:0.15
 });
 
-revealElements.forEach((el) => {
+reveals.forEach((el) => {
   observer.observe(el);
 });
 
-// TYPING EFFECT
-
-const title = document.querySelector(".hero h1");
-
-const text =
-  "Building Strong Technical Foundations For Modern Infrastructure";
-
-title.innerHTML = "";
-
-let index = 0;
-
-function typeText() {
-
-  if (index < text.length) {
-
-    title.innerHTML += text.charAt(index);
-    index++;
-
-    setTimeout(typeText, 35);
-  }
-}
-
-window.addEventListener("load", typeText);
-
-// NAVBAR SCROLL EFFECT
-
-const nav = document.querySelector("nav");
-
-window.addEventListener("scroll", () => {
-
-  if (window.scrollY > 40) {
-
-    nav.classList.add("nav-scrolled");
-
-  } else {
-
-    nav.classList.remove("nav-scrolled");
-
-  }
-});
-
-// PARALLAX HERO IMAGE
-
-window.addEventListener("mousemove", (e) => {
-
-  const image = document.querySelector(".hero-image");
-
-  const x = (window.innerWidth / 2 - e.pageX) / 40;
-  const y = (window.innerHeight / 2 - e.pageY) / 40;
-
-  image.style.transform = `translate(${x}px, ${y}px)`;
-});
-
-// GLOW FOLLOWER
-
-const glow = document.createElement("div");
-
-glow.classList.add("cursor-glow");
-
-document.body.appendChild(glow);
+const glow = document.querySelector(".cursor-glow");
 
 document.addEventListener("mousemove", (e) => {
 
   glow.style.left = e.clientX + "px";
   glow.style.top = e.clientY + "px";
+
+});
+
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+
+  if(window.scrollY > 50){
+    navbar.style.background = "rgba(2,6,23,0.9)";
+    navbar.style.borderBottom = "1px solid rgba(255,255,255,0.08)";
+  }
+
+  else{
+    navbar.style.background = "rgba(2,6,23,0.65)";
+  }
+
+});
+
+const cards = document.querySelectorAll(".skill-detail-card, .project-card");
+
+cards.forEach((card) => {
+
+  card.addEventListener("mousemove", (e) => {
+
+    const rect = card.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    card.style.background = `
+      radial-gradient(
+        circle at ${x}px ${y}px,
+        rgba(59,130,246,0.14),
+        rgba(15,23,42,0.8) 45%
+      )
+    `;
+
+  });
+
+  card.addEventListener("mouseleave", () => {
+
+    card.style.background = "rgba(15,23,42,0.6)";
+
+  });
 
 });
