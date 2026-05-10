@@ -17,6 +17,31 @@ body {
   max-width: 1400px;
   margin: auto;
 }
+body::before {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: rgba(59,130,246,0.12);
+  border-radius: 50%;
+  top: -150px;
+  left: -120px;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background: rgba(168,85,247,0.10);
+  border-radius: 50%;
+  bottom: -150px;
+  right: -100px;
+  filter: blur(120px);
+  z-index: -1;
+}
 
 /* NAVBAR */
 
@@ -180,7 +205,7 @@ nav a:hover {
 
 section {
   padding: 100px 80px;
-  border-bottom: 1px solid #1e293b;
+ border-bottom: 1px solid rgba(148,163,184,0.08);
   animation: sectionPop 0.8s ease;
 }
 
@@ -217,7 +242,7 @@ section {
   margin-bottom: 22px;
   border: 1px solid #1e293b;
   border-radius: 22px;
-  background: rgba(15,23,42,0.7);
+  background: rgba(30,41,59,0.45);
   backdrop-filter: blur(14px);
   transition: 0.35s ease;
 }
@@ -347,4 +372,36 @@ section {
 
 .project-card h3 {
   margin-bottom: 8px;
+}
+.skill-detail-card,
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-detail-card::before,
+.project-card::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: rgba(96,165,250,0.06);
+  border-radius: 50%;
+  top: -30px;
+  right: -30px;
+}
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.tech-stack span {
+  background: rgba(59,130,246,0.12);
+  color: #93c5fd;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  border: 1px solid rgba(96,165,250,0.15);
 }
