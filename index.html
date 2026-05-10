@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <link
    rel="stylesheet"
@@ -17,31 +17,41 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
- 
+<div class="cursor-glow"></div>
+
+<nav id="navbar">
+
+  <div class="nav-logo">
+    ALKA
+  </div>
+
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
-  
   </ul>
+
 </nav>
 
 <header class="hero">
 
+  <div class="grid-bg"></div>
+
   <div class="hero-content">
 
-    <div class="hero-text">
+    <div class="hero-text reveal">
 
-     <p class="hero-tag">
-      Cloud • Linux • Systems
-    </p>
+      <p class="hero-tag">
+        Cloud • Linux • Systems
+      </p>
 
-<h1>
-  Building Strong Technical Foundations For Modern Infrastructure
-</h1>
+      <h1 class="typing-text">
+        Building Strong Technical Foundations For Modern Infrastructure
+      </h1>
+
       <p class="hero-bio">
         BCA student focused on building strong technical foundations in Linux,
         Git/GitHub, system fundamentals, and cloud technologies while exploring
@@ -74,35 +84,48 @@
 
     </div>
 
-    <div class="hero-image">
-      <img src="profile.jpeg1" alt="Alka">
+    <div class="hero-image reveal">
+
+      <div class="image-wrapper">
+
+        <div class="image-ring"></div>
+
+        <img src="profile.jpeg1" alt="Alka">
+
+      </div>
+
+      <h2 class="alka-name">ALKA</h2>
+
     </div>
 
   </div>
 
 </header>
 
-<section class="about" id="about">
+<section class="about reveal" id="about">
 
-  <h2>About Me</h2>
+  <div class="section-title">
+    <h2>About Me</h2>
+  </div>
 
   <p>
     I enjoy understanding how systems work behind the scenes and learning through
     hands-on practice rather than only theory. Currently, I’m strengthening my
     foundations in Linux, Git/GitHub, networking concepts, and technical workflows
-    while gradually exploring cloud computing, Quality Assurance , and IT support. I’m focused on
-    continuous improvement, practical learning, and building a strong long-term
-    technical career.
+    while gradually exploring cloud computing, Quality Assurance, and IT support.
+    I’m focused on continuous improvement, practical learning, and building a strong
+    long-term technical career.
   </p>
+
+</section>
 
 <section class="skills" id="skills">
 
-  <div class="section-title">
+  <div class="section-title reveal">
     <h2>Technical Skills</h2>
   </div>
 
-  <div class="skill-detail-card">
-
+  <div class="skill-detail-card reveal">
     <div class="skill-icon">
       <i class="fa-brands fa-linux"></i>
     </div>
@@ -116,10 +139,9 @@
         hands-on learning environments.
       </p>
     </div>
-
   </div>
 
-  <div class="skill-detail-card">
+  <div class="skill-detail-card reveal">
 
     <div class="skill-icon">
       <i class="fa-brands fa-git-alt"></i>
@@ -136,7 +158,7 @@
 
   </div>
 
-  <div class="skill-detail-card">
+  <div class="skill-detail-card reveal">
 
     <div class="skill-icon">
       <i class="fa-brands fa-github"></i>
@@ -153,7 +175,7 @@
 
   </div>
 
-  <div class="skill-detail-card">
+  <div class="skill-detail-card reveal">
 
     <div class="skill-icon">
       <i class="fa-solid fa-network-wired"></i>
@@ -170,7 +192,7 @@
 
   </div>
 
-  <div class="skill-detail-card">
+  <div class="skill-detail-card reveal">
 
     <div class="skill-icon">
       <i class="fa-solid fa-terminal"></i>
@@ -187,11 +209,11 @@
 
   </div>
 
-  <div class="section-title soft-space">
+  <div class="section-title soft-space reveal">
     <h2>Soft Skills</h2>
   </div>
 
-  <div class="skill-detail-card">
+  <div class="skill-detail-card reveal">
 
     <div class="skill-icon">
       <i class="fa-solid fa-brain"></i>
@@ -208,7 +230,7 @@
 
   </div>
 
-  <div class="skill-detail-card">
+  <div class="skill-detail-card reveal">
 
     <div class="skill-icon">
       <i class="fa-solid fa-comments"></i>
@@ -225,7 +247,7 @@
 
   </div>
 
-  <div class="skill-detail-card">
+  <div class="skill-detail-card reveal">
 
     <div class="skill-icon">
       <i class="fa-solid fa-book"></i>
@@ -242,7 +264,7 @@
 
   </div>
 
-  <div class="skill-detail-card">
+  <div class="skill-detail-card reveal">
 
     <div class="skill-icon">
       <i class="fa-solid fa-bolt"></i>
@@ -263,13 +285,11 @@
 
 <section class="projects" id="projects">
 
- <div class="section-title">
-  <h2>Projects & Technical Experience</h2>
-</div>
+  <div class="section-title reveal">
+    <h2>Projects & Technical Experience</h2>
+  </div>
 
-  <div class="project-card">
-
-  <div class="project-content">
+  <div class="project-card reveal">
 
     <h3>Linux System Administration Practice</h3>
 
@@ -289,8 +309,7 @@
 
   </div>
 
-</div>
-  <div class="project-card">
+  <div class="project-card reveal">
 
     <h3>Git & GitHub Workflow Practice</h3>
 
@@ -301,7 +320,7 @@
 
   </div>
 
-  <div class="project-card">
+  <div class="project-card reveal">
 
     <h3>Containerization & Deployment Exposure</h3>
 
@@ -313,8 +332,6 @@
   </div>
 
 </section>
-
-
 
 <script src="script.js"></script>
 
