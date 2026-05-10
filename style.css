@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   background: #0f172a;
   color: white;
   line-height: 1.6;
@@ -43,12 +43,28 @@ nav a {
   color: #94a3b8;
   font-size: 15px;
   transition: 0.3s;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #60a5fa;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 nav a:hover {
   color: white;
 }
-
 /* HERO */
 
 .hero {
@@ -84,9 +100,21 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 82px;
-  letter-spacing: -2px;
+  font-size: 72px;
+  line-height: 1.05;
+  letter-spacing: -3px;
+  max-width: 750px;
+  font-weight: 800;
 }
+.hero-tag {
+  color: #60a5fa;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
 
 .hero-bio {
   margin-top: 24px;
@@ -97,11 +125,19 @@ nav a:hover {
 }
 
 .hero-image img {
-  width: 340px;
-  height: 340px;
+  width: 360px;
+  height: 360px;
   object-fit: cover;
-  border-radius: 24px;
-  border: 3px solid #334155;
+  border-radius: 28px;
+  border: 1px solid #334155;
+  box-shadow:
+    0 0 40px rgba(59,130,246,0.15),
+    0 20px 50px rgba(0,0,0,0.45);
+  transition: 0.4s ease;
+}
+
+.hero-image img:hover {
+  transform: translateY(-6px);
 }
 
 /* BUTTONS */
@@ -117,10 +153,18 @@ nav a:hover {
   text-decoration: none;
   color: white;
   border: 1px solid #334155;
-  padding: 14px 22px;
-  border-radius: 12px;
-  background: #1e293b;
-  transition: 0.3s;
+  padding: 14px 24px;
+  border-radius: 14px;
+  background: rgba(30,41,59,0.7);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.buttons a:hover {
+  transform: translateY(-5px);
+  border-color: #60a5fa;
+  background: #172033;
 }
 
 .buttons a:hover {
@@ -145,7 +189,8 @@ section {
 }
 
 .section-title h2 {
-  font-size: 38px;
+  font-size: 46px;
+  letter-spacing: -1px;
 }
 
 /* ABOUT */
@@ -167,9 +212,21 @@ section {
 .project-card {
   display: flex;
   align-items: flex-start;
-  gap: 18px;
-  padding: 18px 0;
-  border-bottom: 1px solid #1e293b;
+  gap: 20px;
+  padding: 28px;
+  margin-bottom: 22px;
+  border: 1px solid #1e293b;
+  border-radius: 22px;
+  background: rgba(15,23,42,0.7);
+  backdrop-filter: blur(14px);
+  transition: 0.35s ease;
+}
+
+.skill-detail-card:hover,
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #334155;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 .skill-icon {
   min-width: 45px;
