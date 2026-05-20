@@ -514,11 +514,16 @@ section{
 .skill-column h3{
   text-align:center;
 }
-@media(max-width:768px){
+.alka-role{
+  margin-top:8px;
+  color:#94a3b8;
+  font-size:15px;
+  letter-spacing:2px;
 }
-  
 
-nav{
+@media(max-width:768px){
+
+  nav{
     padding:18px 20px;
   }
 
@@ -541,12 +546,13 @@ nav{
   }
 
   .hero h1{
-    font-size:52px;
-    line-height:1.05;
+    font-size:42px;
+    line-height:1.1;
+    letter-spacing:-2px;
   }
 
-  .hero-bio{
-    font-size:17px;
+  .hero-tag{
+    font-size:12px;
   }
 
   .image-wrapper{
@@ -564,8 +570,18 @@ nav{
     letter-spacing:6px;
   }
 
+  .alka-role{
+    font-size:13px;
+  }
+
   .buttons{
     justify-content:center;
+  }
+
+  .buttons a{
+    width:100%;
+    justify-content:center;
+    text-align:center;
   }
 
   section{
@@ -574,14 +590,31 @@ nav{
 
   .section-title h2{
     font-size:38px;
+    text-align:center;
   }
 
-  .about p{
-    font-size:17px;
+  .skills-wrapper{
+    grid-template-columns:1fr;
+    gap:50px;
   }
 
-  .skill-detail-card,
-  .project-card{
-    padding:26px;
+  .skills-grid{
+    grid-template-columns:1fr;
+  }
+
+  .skill-column h3{
+    text-align:center;
+  }
+
+  .connect-section h2{
+    font-size:38px;
+  }
+
+  .connect-section p{
+    font-size:16px;
+  }
+
+  .cert-card{
+    padding:22px;
   }
 }
