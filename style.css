@@ -522,56 +522,85 @@ section{
 }
 
 @media(max-width:768px){
+.alka-role{
+  margin-top:8px;
+  color:#94a3b8;
+  font-size:15px;
+  letter-spacing:2px;
+}
+
+@media(max-width:768px){
+
+  body{
+    overflow-x:hidden;
+  }
 
   nav{
-    padding:18px 20px;
+    padding:16px 18px;
   }
 
   nav ul{
-    gap:18px;
+    gap:14px;
+  }
+
+  nav a{
+    font-size:14px;
   }
 
   .nav-logo{
-    display:none;
+    font-size:16px;
+    letter-spacing:3px;
   }
 
   .hero{
-    padding:140px 20px 80px;
+    padding:120px 20px 60px;
+    min-height:auto;
   }
 
   .hero-content{
-    flex-direction:column-reverse;
+    flex-direction:column;
     text-align:center;
     gap:50px;
   }
 
-  .hero h1{
-    font-size:42px;
-    line-height:1.1;
-    letter-spacing:-2px;
-  }
-
-  .hero-tag{
-    font-size:12px;
+  .hero-image{
+    order:-1;
   }
 
   .image-wrapper{
-    width:260px;
-    height:260px;
+    width:240px;
+    height:240px;
   }
 
   .hero-image img{
-    width:230px;
-    height:230px;
+    width:210px;
+    height:210px;
   }
 
   .alka-name{
     font-size:24px;
-    letter-spacing:6px;
+    letter-spacing:5px;
+    margin-top:18px;
   }
 
   .alka-role{
     font-size:13px;
+  }
+
+  .hero-text{
+    width:100%;
+  }
+
+  .hero h1{
+    font-size:48px;
+    line-height:1.05;
+    letter-spacing:-2px;
+    word-break:break-word;
+  }
+
+  .hero-tag{
+    font-size:12px;
+    margin-bottom:18px;
   }
 
   .buttons{
@@ -580,22 +609,21 @@ section{
 
   .buttons a{
     width:100%;
-    justify-content:center;
-    text-align:center;
+    max-width:320px;
   }
 
   section{
-    padding:80px 20px;
+    padding:70px 20px;
   }
 
   .section-title h2{
-    font-size:38px;
+    font-size:36px;
     text-align:center;
   }
 
   .skills-wrapper{
     grid-template-columns:1fr;
-    gap:50px;
+    gap:40px;
   }
 
   .skills-grid{
@@ -607,13 +635,18 @@ section{
   }
 
   .connect-section h2{
-    font-size:38px;
+    font-size:36px;
   }
 
   .connect-section p{
     font-size:16px;
   }
 
+  .cert-card{
+    padding:22px;
+  }
+}
+ 
   .cert-card{
     padding:22px;
   }
