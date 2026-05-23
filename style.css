@@ -217,6 +217,12 @@ nav a:hover{
   font-weight:800;
   color:#f8fafc;
 }
+.alka-role{
+  margin-top:10px;
+  color:#94a3b8;
+  font-size:15px;
+  letter-spacing:3px;
+}
 
 .buttons{
   display:flex;
@@ -502,25 +508,14 @@ section{
     opacity:1;
     transform:translateY(0);
   }
-
-.skills-wrapper{
-  grid-template-columns:1fr;
 }
 
-.skills-grid{
-  grid-template-columns:1fr;
-}
-
-.skill-column h3{
-  text-align:center;
-}
 .alka-role{
   margin-top:8px;
   color:#94a3b8;
   font-size:15px;
   letter-spacing:2px;
 }
-
 /* MOBILE ONLY */
 @media screen and (max-width:768px){
 
@@ -530,14 +525,20 @@ section{
 
   nav{
     padding:16px 20px;
-  }
-
-  nav ul{
-    gap:14px;
+    width:100%;
   }
 
   .nav-logo{
-    font-size:16px;
+    font-size:15px;
+    letter-spacing:3px;
+  }
+
+  nav ul{
+    gap:16px;
+  }
+
+  nav a{
+    font-size:14px;
   }
 
   .hero{
@@ -547,8 +548,9 @@ section{
 
   .hero-content{
     flex-direction:column;
-    gap:40px;
+    align-items:center;
     text-align:center;
+    gap:40px;
   }
 
   .hero-image{
@@ -571,7 +573,7 @@ section{
   }
 
   .alka-name{
-    font-size:24px;
+    font-size:28px;
     letter-spacing:6px;
   }
 
@@ -580,27 +582,35 @@ section{
   }
 
   .hero h1{
-    font-size:42px;
-    line-height:1.1;
-    letter-spacing:-2px;
+    font-size:58px;
+    line-height:0.95;
+    letter-spacing:-3px;
     max-width:100%;
   }
 
   .hero-tag{
     font-size:12px;
+    margin-bottom:18px;
   }
 
   .buttons{
     justify-content:center;
+    gap:14px;
   }
 
   .buttons a{
     width:100%;
     max-width:280px;
+    justify-content:center;
   }
 
   section{
     padding:70px 20px;
+  }
+
+  .section-title h2{
+    font-size:36px;
+    text-align:center;
   }
 
   .skills-wrapper{
@@ -616,13 +626,9 @@ section{
     text-align:center;
   }
 
-  .section-title h2{
-    font-size:36px;
-    text-align:center;
-  }
-
   .connect-section h2{
     font-size:36px;
   }
 
 }
+
